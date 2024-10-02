@@ -1,5 +1,9 @@
 import streamlit as st
 
+st.set_page_config(page_title='Calculadora Shopee', 
+                   page_icon='💎',
+                   layout='wide')
+
 # Exibindo o header "Precificador Shopee" estilizado com as cores Shopee
 st.markdown("""
     <div style='background-color: #e81d17; color: white; border-radius: 8px; padding: 2px; text-align: center; font-size: 32px; font-weight: bold;'>
@@ -65,39 +69,39 @@ if sugestao_preco_btn:
     
     p5.markdown(f"""
         <div style="text-align: center; margin-bottom: 20px;">
-            <label style='font-size: 16px; color: #05E33F; background:#0E0850; border-radius: 10px; width: 100%;'>5 % Lucro</label><br>
-            <h4 style='color: white; background-color: #b40001; border-radius: 10px; font-size: 20px; width: 100%; margin-top: 2px; height: 45px; justify-content: center; align-items: center; display: flex; '>R$ {margem5:.2f}</h4>
+            <label style='font-size: 20px; color: #05E33F; background:#0E0850; border-radius: 10px; width: 100%;'>5 % Lucro</label><br>
+            <h4 style='color: white; background-color: #b40001; border-radius: 10px; font-size: 26px; width: 100%; margin-top: 2px; height: 45px; justify-content: center; align-items: center; display: flex; '>R$ {margem5:.2f}</h4>
         </div>
         """, unsafe_allow_html=True)
     
     p8.markdown(f"""
         <div style="text-align: center;">
-            <label style='font-size: 16px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>8 % Lucro</label><br>
-            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 20px; width: 100%; margin-top: 2px; height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem8:.2f}</h4>
+            <label style='font-size: 20px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>8 % Lucro</label><br>
+            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 26px; width: 100%; margin-top: 2px; height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem8:.2f}</h4>
         </div>
         """, unsafe_allow_html=True)
     p10.markdown(f"""
         <div style="text-align: center;">
-            <label style='font-size: 16px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>10 % Lucro</label><br>
-            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 20px; width: 100%; margin-top: 2px;height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem10:.2f}</h4>
+            <label style='font-size: 20px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>10 % Lucro</label><br>
+            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 26px; width: 100%; margin-top: 2px;height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem10:.2f}</h4>
         </div>
         """, unsafe_allow_html=True)
     p12.markdown(f"""
         <div style="text-align: center;">
-            <label style='font-size: 16px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>12 % Lucro</label><br>
-            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 20px; width: 100%; margin-top: 2px;height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem12:.2f}</h4>
+            <label style='font-size: 20px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>12 % Lucro</label><br>
+            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 26px; width: 100%; margin-top: 2px;height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem12:.2f}</h4>
         </div>
         """, unsafe_allow_html=True)
     p15.markdown(f"""
         <div style="text-align: center;">
-            <label style='font-size: 16px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>15 % Lucro</label><br>
-            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 20px; width: 100%; margin-top: 2px;height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem15:.2f}</h4>
+            <label style='font-size: 20px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>15 % Lucro</label><br>
+            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 26px; width: 100%; margin-top: 2px;height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem15:.2f}</h4>
         </div>
         """, unsafe_allow_html=True)
     p20.markdown(f"""
         <div style="text-align: center;">
-            <label style='font-size: 16px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>20 % Lucro</label><br>
-            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 20px; width: 100%; margin-top: 2px; height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem20:.2f}</h4>
+            <label style='font-size: 20px; color: #05E33F ; background:#0E0850; border-radius: 10px; width: 100%;'>20 % Lucro</label><br>
+            <h4 style='color: white; background-color: #b40001; border-radius: 10px;  font-size: 26px; width: 100%; margin-top: 2px; height: 45px;justify-content: center; align-items: center; display: flex;'>R$ {margem20:.2f}</h4>
         </div>
         """, unsafe_allow_html=True)
    
@@ -175,11 +179,11 @@ if valor_de_venda > valor_total_custo:
             if lucro_apos_comissao > 0:
                 fn1.markdown(f"""
                             <label style='font-size: 20px; display: block; text-align: center;'>(+) Lucro Operação</label>                
-                            <h4 style='color: white ; background-color: #000034; border-radius: 5px; padding:16px; font-size: 30px; ;text-align: center;'>R$  {lucro_apos_comissao:.2f}</h4><br>           
+                            <h4 style='color: white ; background-color: #000034; border-radius: 5px; padding:10px; font-size: 30px; ;text-align: center;'>R$  {lucro_apos_comissao:.2f}</h4><br>           
                             """, unsafe_allow_html=True)
                 fn2.markdown(f"""   
                             <label style='font-size: 20px; display: block; text-align: center;'>(%) Porcentagem de Ganho</label>               
-                            <h4 style='color: white; background-color:#000034; border-radius: 5px; padding:16px; font-size: 30px; text-align: center;'>{porcentagem_lucro:.2f} %</h4><br>           
+                            <h4 style='color: white; background-color:#000034; border-radius: 5px; padding:10px; font-size: 30px; text-align: center;'>{porcentagem_lucro:.2f} %</h4><br>           
                             """, unsafe_allow_html=True)
                     # Exibindo o divisor da mesma cor abaixo
                 st.markdown("""
@@ -237,8 +241,6 @@ if valor_de_venda > valor_total_custo:
                             
                 <hr style='border: 1px solid #ffb16f; border-radius: 5px;'>
                 """, unsafe_allow_html=True)
-
-
 
 
 
