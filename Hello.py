@@ -109,7 +109,7 @@ if sugestao_preco_btn:
     slider1, slider2 = st.columns(2)
         
     # Slider para poder mover a métrica na porcentagem de lucro   
-    slider_preco = slider1.slider(label="Margem de Lucro Móvel", format='%d%%', min_value=0, max_value=100, value=1) 
+    slider_preco = slider1.slider(label="Margem de Lucro Móvel (Valor Minimo 0% | Valor Máximo 70%)", format='%d%%', min_value=0, max_value=70, value=1) 
 
     margem_slider = (custo_produto + despesas_totais) / (1 - ((slider_preco/100) + taxa_shopee))
 
@@ -241,8 +241,6 @@ if valor_de_venda > valor_total_custo:
                             
                 <hr style='border: 1px solid #ffb16f; border-radius: 5px;'>
                 """, unsafe_allow_html=True)
-
-
 
 
 
