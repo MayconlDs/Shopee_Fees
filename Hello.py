@@ -173,8 +173,9 @@ if valor_de_venda > valor_total_custo:
             final_pagamento = valor_de_venda - valor_comissao
             lucro_apos_comissao = round(valor_de_venda - (valor_total_custo + valor_comissao), 2)
             porcentagem_lucro = (lucro_apos_comissao / valor_de_venda) * 100 # Calcula o lucro em relação ao custo total
-
-            fn1, fn2 = st.columns(2)
+            valor_a_receber = valor_de_venda - valor_comissao
+            
+            fn1, fn2, fn3 = st.columns(3)
         
             if lucro_apos_comissao > 0:
                 fn1.markdown(f"""
@@ -184,6 +185,11 @@ if valor_de_venda > valor_total_custo:
                 fn2.markdown(f"""   
                             <label style='font-size: 20px; display: block; text-align: center;'>(%) Porcentagem de Ganho</label>               
                             <h4 style='color: white; background-color:#000034; border-radius: 5px; padding:10px; font-size: 30px; text-align: center;'>{porcentagem_lucro:.2f} %</h4><br>           
+                            """, unsafe_allow_html=True)
+                
+                fn3.markdown(f"""   
+                            <label style='font-size: 20px; display: block; text-align: center;'>(=) Valor a Receber</label>               
+                            <h4 style='color: white; background-color:#000034; border-radius: 5px; padding:10px; font-size: 30px; text-align: center;'>R$ {valor_a_receber:.2f}</h4><br>           
                             """, unsafe_allow_html=True)
                     # Exibindo o divisor da mesma cor abaixo
                 st.markdown("""
